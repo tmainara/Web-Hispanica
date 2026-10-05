@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1e20"/><stop offset="1" stop-color="#34393c"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#c)"/><path d="M20 420q40-70 100-70t100 70z" fill="#4a4f52"/><path d="M640 420q30-45 80-45t60 45z" fill="#4a4f52"/>
+<rect y="420" width="800" height="80" fill="#121416"/><rect y="418" width="800" height="4" fill="#f4b51b"/>
+<g transform='translate(20 0)'><rect x="200" y="360" width="340" height="60" rx="30" fill="#2b2f32"/>
+<g fill="#4a4f52"><circle cx="240" cy="390" r="14"/><circle cx="310" cy="390" r="14"/><circle cx="380" cy="390" r="14"/><circle cx="450" cy="390" r="14"/><circle cx="505" cy="390" r="14"/></g>
+<rect x="235" y="295" width="250" height="65" fill="#f4b51b"/><rect x="440" y="305" width="95" height="50" fill="#f4b51b"/>
+<rect x="505" y="255" width="14" height="50" fill="#2b2f32"/>
+<rect x="320" y="215" width="120" height="80" fill="#f4b51b"/><rect x="338" y="230" width="85" height="50" fill="#cfd8dc"/>
+<rect x="300" y="205" width="160" height="14" fill="#2b2f32"/>
+<line x1="500" y1="365" x2="595" y2="365" stroke="#2b2f32" stroke-width="12"/>
+<path d="M585 300h30l20 120h-50z" fill="#2b2f32"/></g></svg>

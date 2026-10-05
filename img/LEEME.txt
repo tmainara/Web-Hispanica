@@ -1,0 +1,11 @@
+FOTOS REALES
+Suelta aquí tus fotos con estos nombres EXACTOS (formato .jpg, ancho 1600-2000 px, menos de 400 KB cada una):
+  hero.jpg          -> portada (formato apaisado, maquinaria a la derecha)
+  empresa.jpg       -> página Empresa
+  bulldozer.jpg     -> Preparación de terrenos
+  camion.jpg        -> Movimiento de tierras
+  excavadora.jpg    -> Excavación y nivelación
+  compactadora.jpg  -> Trabajos con maquinaria
+Si falta una foto, la web muestra automáticamente la ilustración .svg del mismo nombre.
+Usa fotos propias o de bancos gratuitos (Pexels, Pixabay, Unsplash) y guarda la licencia.
+Si aparecen personas reconocibles, necesitas su autorización.
