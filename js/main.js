@@ -1,6 +1,6 @@
 // Configuración editable
 const CONFIG = {
-  whatsapp: "34617885050",
+  whatsapp: "34602605878",
   email: "" // Pon aquí el correo real (ej. "info@tudominio.es") para activar el botón "Enviar por correo"
 };
 
