@@ -55,3 +55,38 @@ if (form) {
     msg.textContent = "Se ha abierto tu aplicación con el mensaje preparado. Pulsa enviar para completar la consulta.";
   }));
 }
+(function () {
+  // Sombra suave en la cabecera al hacer scroll
+  const header = document.querySelector(".header");
+  if (header) {
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  // Aparición suave de bloques al hacer scroll (respeta "reducir movimiento")
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) return;
+
+  const io = new IntersectionObserver((entradas) => {
+    entradas.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.classList.add("visible");
+      io.unobserve(el);
+      setTimeout(() => {
+        el.classList.remove("reveal", "visible");
+        el.style.removeProperty("--d");
+      }, 1100);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -5% 0px" });
+
+  document.querySelectorAll(".quick-card, .service, .two-col > *, .band, .form-container").forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.92) return; // ya visible: no se anima
+    const pos = Array.prototype.indexOf.call(el.parentElement.children, el);
+    el.style.setProperty("--d", Math.min(pos * 0.08, 0.24) + "s");
+    el.classList.add("reveal");
+    io.observe(el);
+  });
+})();
+
